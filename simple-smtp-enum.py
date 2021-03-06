@@ -10,7 +10,7 @@ ip = sys.argv[1]
 port = 25
 user = sys.argv[2]
 
-s = socket.socket(socket.AF_INE, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 connect = s.connect((ip,port))
 banner = s.recv(1024)
